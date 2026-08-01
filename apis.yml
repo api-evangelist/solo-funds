@@ -1,7 +1,27 @@
 aid: solo-funds
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/solo-funds.png
 name: SoLo Funds
-description: SoLo Funds is a company surfaced as a portfolio company of techstars and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  SoLo Funds is a Techstars-backed, Los Angeles fintech that operates a
+  community-driven peer-to-peer lending marketplace delivered as a consumer
+  mobile app for iOS and Android. Members request small, short-term loans that
+  other members choose to fund, with borrowers offering an optional tip and
+  donation rather than mandated interest, positioning the platform as a
+  member-to-member alternative to payday and overdraft borrowing. SoLo Funds
+  is a consumer financial-services product and does not publish a public
+  developer API, SDK, or developer portal; its only publicly reachable
+  operational surface is a hosted status page.
 url: https://raw.githubusercontent.com/api-evangelist/solo-funds/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +31,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Financial Services
+- Fintech
+- Lending
+- Peer-to-Peer
+- Personal Finance
+- Mobile
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,3 +49,14 @@ maintainers:
 common:
 - type: Website
   url: https://solofunds.com/
+- type: StatusPage
+  url: https://status.solofunds.com/
+- type: Lifecycle
+  url: lifecycle/solo-funds-lifecycle.yml
+- type: DomainSecurity
+  url: security/solo-funds-domain-security.yml
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1

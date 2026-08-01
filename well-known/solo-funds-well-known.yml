@@ -1,0 +1,25 @@
+generated: '2026-07-21'
+method: probed
+source: live HTTP probes of solofunds.com/.well-known/*
+host: https://solofunds.com
+# The solofunds.com origin sits behind a bot-challenge that returns HTTP 202 for
+# every path (including the homepage), so none of the probed .well-known
+# documents could be confirmed as genuine discovery files. Recorded here for
+# auditability; no valid document was retrieved, so no WellKnown/SecurityTxt
+# scoring pointer is wired. Empty/none is a valid, expected result.
+documents:
+- path: /.well-known/security.txt
+  status: 202
+  note: bot-challenge response, not a valid document
+- path: /.well-known/openid-configuration
+  status: 202
+  note: bot-challenge response, not a valid document
+- path: /.well-known/oauth-authorization-server
+  status: 202
+  note: bot-challenge response, not a valid document
+- path: /.well-known/api-catalog
+  status: 202
+  note: bot-challenge response, not a valid document
+- path: /.well-known/ai-plugin.json
+  status: 202
+  note: bot-challenge response, not a valid document
